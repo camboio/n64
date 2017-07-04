@@ -1,9 +1,22 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import Nav from './nav';
+import Footer from './footer';
+import Home from './content/home';
 
 export default class App extends Component {
   render() {
     return (
-      <div>React simple starter</div>
+      <BrowserRouter>
+         <div className="app-container">
+            <Nav />
+            <Switch>
+               <Route exact path="/" component={Home} />
+               <Redirect to="/" />
+            </Switch>
+            <Footer />
+         </div>
+      </BrowserRouter>
     );
   }
 }

@@ -1,0 +1,96 @@
+$background-color: #ececec;
+$primary-color: #96858f;
+$secondary-color: #9099a2;
+$tertiary-color: #d5d5d5;
+$contrast-color: #6d7993;
+
+body {
+   padding-top: 50px;
+}
+
+a {
+   color: $background-color;
+}
+
+a:hover{
+   text-decoration: none;
+   color: #fff;
+}
+
+.react-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+
+   .nav-container{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      background-color: $secondary-color;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 2em;
+      padding-right: 2em;
+   }
+
+   .content-container{
+      min-height: 80vh;
+   }
+
+   .footer-container{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: $secondary-color;
+
+      .footer-google-map{
+         width: 100%;
+         height: 16em;
+         background-color: $background-color;
+      }
+
+      .footer-content{
+         width:100%;
+         display: flex;
+         justify-content: space-between;
+         min-height: 25vh;
+
+         .footer-links{
+            background-color: $contrast-color;
+            display: flex;
+            width: 70%;
+            justify-content: space-around;
+            align-items: center;
+            padding: 2em;
+            color: $tertiary-color;
+
+            .footer-col{
+               display: flex;
+               flex-direction: column;
+
+               .footer-title{
+                  font-size: 1em;
+                  text-transform: uppercase;
+                  margin-bottom: 0.4em;
+               }
+
+               a{
+                  font-size: 0.9em;
+               }
+            }
+         }
+
+         .footer-socmed{
+            background-color: $secondary-color;
+            color: #fff;
+            width: 30%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding: 2em;
+         }
+      }
+   }
+}
