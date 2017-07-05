@@ -1,5 +1,12 @@
 import React from 'react';
+import Splash from './splash';
 
-const Home = () => <div className="content-container">This the home content component. Put some content in here!</div>
-
-export default Home;
+export default class Home extends React.Component {
+   render(){
+      return(
+         <div className="content-container">
+            <Splash />
+         </div>
+      );
+   }
+}

@@ -9,12 +9,12 @@ export default class App extends Component {
     return (
       <BrowserRouter>
          <div className="app-container">
-            <Nav />
             <Switch>
                <Route exact path="/" component={Home} />
                <Redirect to="/" />
             </Switch>
             <Footer />
+            <Nav />
          </div>
       </BrowserRouter>
     );

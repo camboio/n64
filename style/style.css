@@ -22,9 +22,35 @@ a:hover {
     align-items: center;
     justify-content: flex-start;
     padding-left: 2em;
-    padding-right: 2em; }
+    padding-right: 2em;
+    transition: all 200ms ease-in; }
+  .react-container .nav-container.top {
+    background-color: rgba(230, 230, 230, 0.4);
+    border-bottom: 1px solid rgba(230, 230, 230, 0.8); }
+    .react-container .nav-container.top a {
+      color: #9099a2; }
   .react-container .content-container {
-    min-height: 80vh; }
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column; }
+    .react-container .content-container .splash-container {
+      background-image: url("../inc/bg.jpg");
+      background-size: cover;
+      background-position: center;
+      margin-top: -50px;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #ececec; }
+      .react-container .content-container .splash-container .splash-title {
+        display: flex;
+        justify-content: center;
+        width: 75%;
+        height: 50%;
+        font-size: 10em; }
   .react-container .footer-container {
     display: flex;
     flex-direction: column;
