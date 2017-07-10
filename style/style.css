@@ -1,8 +1,9 @@
 body {
-  padding-top: 50px; }
+  padding-top: 50px;
+  font-family: 'Open Sans', sans-serif; }
 
 a {
-  color: #ececec; }
+  color: #a9a9a9; }
 
 a:hover {
   text-decoration: none;
@@ -17,7 +18,7 @@ a:hover {
     top: 0;
     width: 100%;
     height: 50px;
-    background-color: #9099a2;
+    background-color: #efefef;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -27,8 +28,6 @@ a:hover {
   .react-container .nav-container.top {
     background-color: rgba(230, 230, 230, 0.4);
     border-bottom: 1px solid rgba(230, 230, 230, 0.8); }
-    .react-container .nav-container.top a {
-      color: #9099a2; }
   .react-container .content-container {
     min-height: 90vh;
     display: flex;
@@ -50,12 +49,111 @@ a:hover {
         justify-content: center;
         width: 75%;
         height: 50%;
-        font-size: 10em; }
+        font-size: 10em;
+        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4)); }
+      .react-container .content-container .splash-container .splash-content {
+        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4)); }
+      .react-container .content-container .splash-container .splash-scrolldown {
+        position: absolute;
+        font-size: 4em;
+        animation-name: float;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; }
+    .react-container .content-container .home-container {
+      display: flex;
+      flex-direction: column; }
+      .react-container .content-container .home-container .home-intro-container {
+        width: 100%;
+        padding: 4em;
+        text-align: center; }
+        .react-container .content-container .home-container .home-intro-container .home-intro-headline {
+          margin-bottom: 2em; }
+      .react-container .content-container .home-container .home-content-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column; }
+        .react-container .content-container .home-container .home-content-container .home-content-title {
+          width: 100vw;
+          min-height: 10vw;
+          padding: 1vw;
+          padding-left: 3vw;
+          white-space: nowrap;
+          display: flex;
+          align-items: center;
+          overflow: hidden;
+          background-color: #a9a9a9;
+          color: #ececec;
+          font-weight: bold;
+          font-size: 5vw; }
+        .react-container .content-container .home-container .home-content-container .home-content {
+          width: 100vw;
+          display: flex;
+          flex-direction: column; }
+          .react-container .content-container .home-container .home-content-container .home-content .home-content-row {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            background-color: #fff; }
+            .react-container .content-container .home-container .home-content-container .home-content .home-content-row .home-content-rect {
+              width: 33.3vw;
+              height: 10vw;
+              background-color: #efefef;
+              color: #a9a9a9;
+              font-size: 4vw;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              opacity: 0.8;
+              padding-bottom: 0;
+              transition: all 100ms ease-in; }
+            .react-container .content-container .home-container .home-content-container .home-content .home-content-row .home-content-rect:hover {
+              opacity: 1;
+              padding-bottom: 0.15em; }
+            .react-container .content-container .home-container .home-content-container .home-content .home-content-row .home-content-square {
+              font-family: 'Vollkorn', serif;
+              width: 50vw;
+              height: 45vw;
+              overflow: hidden;
+              color: #ececec;
+              background-size: cover;
+              background-position: center;
+              filter: grayscale(0.6); }
+              .react-container .content-container .home-container .home-content-container .home-content .home-content-row .home-content-square .home-content-layer {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 2vw;
+                transition: all 100ms ease-in; }
+                .react-container .content-container .home-container .home-content-container .home-content .home-content-row .home-content-square .home-content-layer h1 {
+                  font-size: 3.2em;
+                  margin-bottom: 1vw;
+                  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4)); }
+                .react-container .content-container .home-container .home-content-container .home-content .home-content-row .home-content-square .home-content-layer p {
+                  font-size: 1em;
+                  margin-bottom: 2vw;
+                  bottom: 0;
+                  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.6)); }
+            .react-container .content-container .home-container .home-content-container .home-content .home-content-row .home-content-square:hover .home-content-layer {
+              padding-bottom: 2.5vw;
+              opacity: 0.9; }
+            .react-container .content-container .home-container .home-content-container .home-content .home-content-row .home-content-square.dolphins {
+              background-image: url("../inc/square-01.jpg"); }
+              .react-container .content-container .home-container .home-content-container .home-content .home-content-row .home-content-square.dolphins .home-content-layer {
+                background-color: rgba(255, 138, 140, 0.4); }
+            .react-container .content-container .home-container .home-content-container .home-content .home-content-row .home-content-square.sandwich {
+              background-image: url("../inc/square-02.jpg"); }
+              .react-container .content-container .home-container .home-content-container .home-content .home-content-row .home-content-square.sandwich .home-content-layer {
+                background-color: rgba(228, 235, 236, 0.4); }
   .react-container .footer-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #9099a2; }
+    background-color: #a9a9a9; }
     .react-container .footer-container .footer-google-map {
       width: 100%;
       height: 16em;
@@ -63,16 +161,17 @@ a:hover {
     .react-container .footer-container .footer-content {
       width: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      min-height: 25vh; }
+      min-height: 16em; }
       .react-container .footer-container .footer-content .footer-links {
-        background-color: #6d7993;
+        background-color: #a9a9a9;
         display: flex;
-        width: 70%;
+        width: 100%;
         justify-content: space-around;
         align-items: center;
         padding: 2em;
-        color: #d5d5d5; }
+        color: #caebf2; }
         .react-container .footer-container .footer-content .footer-links .footer-col {
           display: flex;
           flex-direction: column; }
@@ -81,14 +180,61 @@ a:hover {
             text-transform: uppercase;
             margin-bottom: 0.4em; }
           .react-container .footer-container .footer-content .footer-links .footer-col a {
+            color: #efefef;
             font-size: 0.9em; }
       .react-container .footer-container .footer-content .footer-socmed {
-        background-color: #9099a2;
+        background-color: #ff3b3f;
         color: #fff;
-        width: 30%;
+        width: 100%;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
         padding: 2em; }
+
+@keyframes float {
+  0% {
+    bottom: 0; }
+  100% {
+    bottom: 10px; } }
+@media (min-width: 600px) {
+  .react-container .content-container .home-container .home-content-container {
+    flex-direction: row;
+    justify-content: flex-start; }
+    .react-container .content-container .home-container .home-content-container .home-content-title {
+      width: 10vw;
+      min-height: 25vw;
+      padding-top: 10vw;
+      padding-left: 0;
+      white-space: nowrap;
+      display: flex;
+      align-items: flex-start;
+      overflow: hidden;
+      background-color: #fff;
+      color: #000; }
+      .react-container .content-container .home-container .home-content-container .home-content-title div {
+        width: 100%;
+        font-size: 3vw;
+        transform: rotate(270deg); }
+    .react-container .content-container .home-container .home-content-container .home-content {
+      width: 90vw; }
+      .react-container .content-container .home-container .home-content-container .home-content .home-content-row .home-content-rect {
+        width: 30vw; }
+      .react-container .content-container .home-container .home-content-container .home-content .home-content-row .home-content-square {
+        width: 45vw;
+        height: 40vw; }
+  .react-container .footer-container {
+    flex-direction: column;
+    width: 100%;
+    background-color: #a9a9a9; }
+    .react-container .footer-container .footer-google-map {
+      width: 100%;
+      height: 16em;
+      background-color: #ececec; }
+    .react-container .footer-container .footer-content {
+      flex-direction: row; }
+      .react-container .footer-container .footer-content .footer-links {
+        width: 70%; }
+      .react-container .footer-container .footer-content .footer-socmed {
+        width: 30%; } }
 
 /*# sourceMappingURL=style.css.map */
