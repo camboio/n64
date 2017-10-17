@@ -1,7 +1,9 @@
 import React from 'react';
 
+import Three from './three';
+
 export default class Home extends React.Component {
    render(){
-      return(<div>home</div>);
+      return(<div><Three /></div>);
    }
 }
